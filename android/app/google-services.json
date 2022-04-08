@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "474649984982",
+    "project_id": "skoomin-c7fa1",
+    "storage_bucket": "skoomin-c7fa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474649984982:android:b751ed94d9c1f641b7ee77",
+        "android_client_info": {
+          "package_name": "com.example.skoomin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474649984982-l1cakod2v0cagjivg2jgg2qlbhdptmth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skoomin",
+            "certificate_hash": "38aff8d748e2218a2c3c9d21e877d53ee87b60ac"
+          }
+        },
+        {
+          "client_id": "474649984982-3g4nd9ngqe5o4bvvf2o8hqi9sq6s212h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf0Nm-AOVTRFTzwCJfA6CvL5PYpjjjgGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474649984982-3g4nd9ngqe5o4bvvf2o8hqi9sq6s212h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
