@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:skoomin/src/base/data.dart';
-import 'package:skoomin/src/base/nav.dart';
 import 'package:skoomin/src/base/themes.dart';
-import 'package:skoomin/src/data/principal_model.dart';
-import 'package:skoomin/src/services/connectivity_services.dart';
-import 'package:skoomin/src/services/principal_services.dart';
 import 'package:skoomin/src/ui/modals/dialog.dart' as prefix0;
 import 'package:skoomin/src/ui/modals/snackbar.dart';
 import 'package:skoomin/src/ui/widgets/app_text_field.dart';
 import 'package:skoomin/src/ui/widgets/auth_button.dart';
-import 'package:skoomin/src/utils/utils.dart';
+
+import '../../base/nav.dart';
+import '../../data/principal_model.dart';
+import '../../services/connectivity_services.dart';
+import '../../services/principal_services.dart';
+import '../../utils/utils.dart';
 
 class ChangePrincipalPasswordPage extends StatefulWidget {
   const ChangePrincipalPasswordPage({Key? key}) : super(key: key);

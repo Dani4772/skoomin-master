@@ -1,6 +1,8 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:skoomin/src/data/report_chat_model.dart';
-import 'package:skoomin/src/services/firebase_firestore_service.dart';
+
+import '../data/report_chat_model.dart';
+import 'firebase_firestore_service.dart';
 
 class ReportChatServices extends AppFirestoreService<ReportChatModel> {
   @override

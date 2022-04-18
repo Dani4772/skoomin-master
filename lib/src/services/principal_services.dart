@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:skoomin/src/data/principal_model.dart';
-import 'package:skoomin/src/services/firebase_firestore_service.dart';
+import 'package:flutter/material.dart';
+
+import '../data/principal_model.dart';
+import 'firebase_firestore_service.dart';
 
 class PrincipalServices extends AppFirestoreService<PrincipalModel> {
   @override
@@ -17,14 +19,15 @@ class PrincipalServices extends AppFirestoreService<PrincipalModel> {
     String where,
   ) async {
     try {
-      print('****');
-      print((await FirebaseFirestore.instance
+      debugPrint('****');
+      debugPrint((await FirebaseFirestore.instance
               .collection('Principals')
               .where('schoolId', isEqualTo: 'VeLtv91hszWHBw7Tgvws')
               .get())
           .docs
-          .length);
-      print('----');
+          .length
+          .toString());
+      debugPrint('----');
       final List<PrincipalModel> _docs = (await FirebaseFirestore.instance
               .collection(collectionName)
               .where(where, isEqualTo: isEqualTo)
@@ -33,7 +36,7 @@ class PrincipalServices extends AppFirestoreService<PrincipalModel> {
           .map((e) => parseModel(e))
           .toList();
 
-      print('Going Data - $isEqualTo - $where - ${_docs.length}');
+      debugPrint('Going Data - $isEqualTo - $where - ${_docs.length}');
       if (_docs.isEmpty) {
         throw 'No Record Found';
       }

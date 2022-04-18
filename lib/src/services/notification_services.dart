@@ -1,6 +1,8 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:skoomin/src/data/notifications_model.dart';
-import 'package:skoomin/src/services/firebase_firestore_service.dart';
+
+import '../data/notifications_model.dart';
+import 'firebase_firestore_service.dart';
 
 class NotificationServices extends AppFirestoreService<NotificationsModel> {
   final String principalId;

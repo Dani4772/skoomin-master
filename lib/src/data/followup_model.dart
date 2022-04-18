@@ -1,5 +1,7 @@
+
 import 'package:json_annotation/json_annotation.dart';
-import 'package:skoomin/src/data/_model.dart';
+
+import '_model.dart';
 
 part 'followup_model.g.dart';
 

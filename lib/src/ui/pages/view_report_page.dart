@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:badges/badges.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:skoomin/src/base/data.dart';

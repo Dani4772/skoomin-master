@@ -3,18 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:skoomin/src/base/data.dart';
 import 'package:skoomin/src/base/nav.dart';
 import 'package:skoomin/src/data/chat_model.dart';
-import 'package:skoomin/src/data/student_model.dart';
 import 'package:skoomin/src/services/chat_services.dart';
-import 'package:skoomin/src/services/connectivity_services.dart';
-import 'package:skoomin/src/services/report_chat_services.dart';
-import 'package:skoomin/src/services/student_registration_services.dart';
 import 'package:skoomin/src/ui/modals/dialog.dart';
 import 'package:skoomin/src/ui/modals/snackbar.dart';
-import 'package:skoomin/src/ui/widgets/app_text_field.dart';
-import 'package:skoomin/src/ui/widgets/auth_button.dart';
-import 'package:skoomin/src/ui/widgets/chat_bubble_widget.dart';
-import 'package:skoomin/src/ui/widgets/simple_stream_builder.dart';
 import 'package:skoomin/src/utils/utils.dart';
+
+import '../../base/data.dart';
+import '../../data/student_model.dart';
+import '../../services/connectivity_services.dart';
+import '../../services/report_chat_services.dart';
+import '../../services/student_registration_services.dart';
+import '../widgets/app_text_field.dart';
+import '../widgets/auth_button.dart';
+import '../widgets/chat_bubble_widget.dart';
+import '../widgets/simple_stream_builder.dart';
 
 class ChatPage extends StatefulWidget {
   final String reportChatId;

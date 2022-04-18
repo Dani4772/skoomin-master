@@ -38,7 +38,7 @@ class _SchoolSelectionVIewState extends State<SchoolSelectionView>
 
   // List<String?> _values = List.filled(5, null, growable: false);
   //
-  List<String?> _values = List.generate(5, (index) => null);
+  final List<String?> _values = List.generate(5, (index) => null);
 
   var _countryIds = <String>[];
   var _countryNames = <String>[];

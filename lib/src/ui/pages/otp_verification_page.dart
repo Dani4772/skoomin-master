@@ -1,14 +1,16 @@
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:skoomin/src/base/data.dart';
 import 'package:skoomin/src/base/nav.dart';
-import 'package:skoomin/src/data/meta_model.dart';
 import 'package:skoomin/src/data/student_model.dart';
 import 'package:skoomin/src/services/student_registration_services.dart';
 import 'package:skoomin/src/ui/modals/dialog.dart';
-import 'package:skoomin/src/ui/pages/home_page.dart';
+
+import '../../data/meta_model.dart';
+import 'home_page.dart';
 
 class OtpVerificationPage extends StatefulWidget {
   final String phone;

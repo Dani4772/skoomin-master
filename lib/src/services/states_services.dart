@@ -1,6 +1,8 @@
+
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:skoomin/src/data/states_model.dart';
 import 'package:skoomin/src/services/firebase_firestore_service.dart';
+
+import '../data/states_model.dart';
 
 class StatesServices extends AppFirestoreService<StatesModel> {
   @override

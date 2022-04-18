@@ -1,5 +1,7 @@
+
 import 'package:hive/hive.dart';
-import 'package:skoomin/src/data/meta_model.dart';
+
+import '../meta_model.dart';
 
 mixin MetaMixin {
   static late Box<Meta> _box;
