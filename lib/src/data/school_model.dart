@@ -10,7 +10,7 @@ class SchoolModel extends Model {
   final String phone;
   final String email;
   final String schoolCode;
-  String secretCode;
+  String? secretCode;
   final List<ContractModel> contracts;
   final String cityId;
   bool? isActive;
@@ -22,7 +22,7 @@ class SchoolModel extends Model {
     required this.contracts,
     required this.phone,
     required this.schoolCode,
-    required this.secretCode,
+    this.secretCode,
     this.isActive,
   });
 
