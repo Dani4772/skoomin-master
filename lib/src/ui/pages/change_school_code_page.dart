@@ -29,7 +29,7 @@ class _ChangeSchoolCodePageState extends State<ChangeSchoolCodePage> {
 
   Future<void> _getOldSecretCode() async {
     schoolModel = await SchoolServices().fetchOneFirestore(user.schoolId);
-    oldSecretCode = schoolModel.secretCode;
+    oldSecretCode = schoolModel.secretCode!;
     setState(() {
       _hasData = true;
     });

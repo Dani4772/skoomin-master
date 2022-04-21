@@ -15,4 +15,18 @@ class CityModel extends Model {
 
   @override
   Map<String, dynamic> toJson() => _$CityModelToJson(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (other is CityModel) {
+      return other.id == id;
+    }
+    return false;
+  }
+
+  @override
+  String toString() => name;
+
+  @override
+  int get hashCode => id.hashCode;
 }
