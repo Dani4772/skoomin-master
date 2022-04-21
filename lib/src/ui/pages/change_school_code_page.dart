@@ -80,10 +80,12 @@ class _ChangeSchoolCodePageState extends State<ChangeSchoolCodePage> {
                           prefixIcon: Icons.lock,
                           textEditingController: newCodeController,
                           label: 'New Code',
+
                           validator: (value) => value!.isEmpty
                               ? 'Please enter new code'
                               : oldSecretCode == value
                                   ? 'New code must be different from old code'
+
                                   : null,
                         ),
                         Padding(
